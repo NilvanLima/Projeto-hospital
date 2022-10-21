@@ -1,0 +1,24 @@
+package com.mycompany.hospital;
+
+import javax.swing.JOptionPane;
+
+public class Medico {
+    private String crm = JOptionPane.showInputDialog("Digite o CRM do médico:n  ");
+    private String nome = JOptionPane.showInputDialog("Digite o nome do médico: ");
+
+    public String getCrm() {
+        return crm;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setCrm(String crm) {
+        this.crm = crm;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }        
+}
