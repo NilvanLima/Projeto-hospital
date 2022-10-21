@@ -1,0 +1,15 @@
+package com.mycompany.hospital;
+
+import javax.swing.JOptionPane;
+
+public class Consulta {
+    private String data = JOptionPane.showInputDialog("Digite a data da consulta: ");
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }    
+}
