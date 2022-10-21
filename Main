@@ -1,0 +1,21 @@
+package com.mycompany.hospital;
+
+import javax.swing.JOptionPane;
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args){  
+        String menu = null; 
+        Consulta consulta = new Consulta();
+        Medico medico = new Medico();
+        Paciente paciente = new Paciente();
+    JOptionPane.showInputDialog("Digite a opção desejada: \n1-Chechar os dados do médico. \n2-Chechar os dados do paciente. \n3-Chechar consulta.");  
+        switch (menu){
+            case "1" -> JOptionPane.showMessageDialog(null, "A CRM do médico é: " + medico.getCrm() +" O nome do médico é: "+ medico.getNome());
+            case "2" -> JOptionPane.showMessageDialog(null, "O nome do paciente é: " + paciente.getNome() + "O telefone do paciente é: " + paciente.getFone() + "A idade do paciente é: " + paciente.getIdade());
+            case "3" -> JOptionPane.showMessageDialog(null, "A data da consulta é: " + consulta.getData());
+            default -> JOptionPane.showMessageDialog(null, "Opção inválida.");
+        }
+        //JOptionPane.showMessageDialog(null,  "O paciente se chama: "+ paciente.getNome() + "\nA data da consulta é: "+ consulta.getData() + "\nCom o médico: " + medico.getNome());
+            }
+}
