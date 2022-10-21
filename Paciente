@@ -1,0 +1,33 @@
+package com.mycompany.hospital;
+
+import javax.swing.JOptionPane;
+
+public class Paciente {
+    private String nome = JOptionPane.showInputDialog("Digite o nome do paciente: ");
+    private int fone = Integer.parseInt(JOptionPane.showInputDialog("Digite o número do paciente"));
+    private int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do paciente: "));
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getFone() {
+        return fone;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setFone(int fone) {
+        this.fone = fone;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }    
+}
